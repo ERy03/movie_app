@@ -95,7 +95,7 @@ class Movie {
       backdropPath:
           map['backdrop_path'] != null ? map['backdrop_path'] as String : null,
       genreIds: map['genre_ids'] != null
-          ? List<int>.from((map['genre_ids'] as List<int>))
+          ? List<int>.from((map['genre_ids'] as List<dynamic>))
           : null,
       id: map['id'] as int,
       originalLanguage: map['original_language'] != null
