@@ -44,7 +44,7 @@ class MoviesResponse {
     return MoviesResponse(
       page: map['page'] as int,
       results: List<Movie>.from(
-        (map['results'] as List<int>).map<Movie>(
+        (map['results'] as List<dynamic>).map<Movie>(
           (x) => Movie.fromMap(x as Map<String, dynamic>),
         ),
       ),
